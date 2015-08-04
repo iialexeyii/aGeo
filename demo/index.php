@@ -5,7 +5,7 @@
 	<title>aSendForm</title>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!-- geo -->
-		<?php define ('geoip', "/aGeo/assets/geoIP/GeoIP.dat"); include_once '../assets/geoIP/contry.php'; ?>
+		<?php define ('geoip', "../assets/geoIP/GeoIP.dat"); include_once '../assets/geoIP/contry.php'; ?>
 		<script type="text/javascript">geoContry = '<?php echo getClientContry(); ?>'</script>
 		<script type="text/javascript" src="../assets/jquery.geo.js"></script>
 	<!-- geo -->

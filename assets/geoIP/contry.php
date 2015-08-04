@@ -11,7 +11,7 @@ include("geoip.inc");
         $ip=$_SERVER['REMOTE_ADDR'];
       }
 
-      $gi = geoip_open($_SERVER["DOCUMENT_ROOT"].geoip,GEOIP_STANDARD);
+      $gi = geoip_open(geoip,GEOIP_STANDARD);
       $result = geoip_country_name_by_addr($gi, $ip);
       return $result;
   }
